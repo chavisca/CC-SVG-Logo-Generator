@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const outputFileName = "./output/logo.svg";
 const logoShapes = ['Circle', 'Triangle', 'Square'];
 const questions = [
     {
@@ -24,10 +26,24 @@ const questions = [
     },
 ];
 
+//Function to create file
+function writeToFile(fileName, data) {
+    // Fill with SVG creation lines, normal template here:
+    fs.writeFile(fileName, data, 'utf8', (err) => {
+        if (err) {
+            console.error('Error writing to file:', err);
+        } else {
+            console.log('Data has been written to' + fileName);
+        }
+    });
+};
+
 // Function to initialize app
 function init () {
     inquirer.prompt(questions)
     .then (response => {
+        const fileTBG = generateSVG(response);
+        writeToFile(outputFileName, fileTBG);
     })
 }
 
