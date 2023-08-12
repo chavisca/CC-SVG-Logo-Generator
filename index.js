@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateSVG = require('./lib/generateSVG');
 const outputFileName = "./output/logo.svg";
 const logoShapes = ['Circle', 'Triangle', 'Square'];
 const questions = [
