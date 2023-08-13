@@ -1,29 +1,33 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateSVG = require('./lib/generateSVG');
+const renderSVG = require('./lib/generateSVG');
 const outputFileName = "./output/logo.svg";
 const logoShapes = ['Circle', 'Triangle', 'Square'];
 const questions = [
     {
-        type: input,
+        type: 'input',
         message: 'Would you like any text on the logo?  If so, enter up to three characters.',
-        name: logoText,
+        name: 'logoText',
+        default: 'TXT',
     },
     {
-        type: input,
+        type: 'input',
         message: 'What color would you like for the TEXT? Enter a color keyword or a hexadecimal code.',
-        name: logoTextColor,
+        name: 'logoTextColor',
+        default: 'Black',
     },
     {
-        type: list,
+        type: 'list',
         message: 'What shape would you like for the logo?  ',
-        name: logoShape,
+        name: 'logoShape',
         choices: logoShapes,
+        default: 'Circle',
     },
     {
-        type: input,
+        type: 'input',
         message: 'What color would you like for the SHAPE? Enter a color keyword or a hexadecimal code.',
-        name: logoShapeColor,
+        name: 'logoShapeColor',
+        default: 'White',
     },
 ];
 
@@ -43,7 +47,10 @@ function writeToFile(fileName, data) {
 function init () {
     inquirer.prompt(questions)
     .then (response => {
-        const fileTBG = generateSVG(response);
+        const fileTBG = renderSVG(response);
+        console.log('*****');
+        console.log(fileTBG);
+        console.log('*****');
         writeToFile(outputFileName, fileTBG);
     })
 }
