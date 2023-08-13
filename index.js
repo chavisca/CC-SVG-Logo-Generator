@@ -49,7 +49,6 @@ function init () {
     .then (response => {
         const fileTBG = renderSVG(response);
         writeToFile(outputFileName, fileTBG);
-        writeToFile('./output/logo.html', fileTBG);
     })
 }
 
