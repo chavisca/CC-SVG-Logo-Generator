@@ -1,21 +1,32 @@
-## User Story:  
+# CC-SVG-LOGO-GENERATOR
 
-AS a freelance web developer  
-I WANT to generate a simple logo for my projects  
-SO THAT I don't have to pay a graphic designer  
+## Description
 
-## Acceptance Criteria:  
-GIVEN a command-line application that accepts user input  
-WHEN I am prompted for text  
-THEN I can enter up to three characters  
-WHEN I am prompted for the text color  
-THEN I can enter a color keyword (OR a hexadecimal number)  
-WHEN I am prompted for a shape  
-THEN I am presented with a list of shapes to choose from: circle, triangle, and square  
-WHEN I am prompted for the shape's color  
-THEN I can enter a color keyword (OR a hexadecimal number)  
-WHEN I have entered input for all the prompts  
-THEN an SVG file is created named `logo.svg`  
-AND the output text "Generated logo.svg" is printed in the command line  
-WHEN I open the `logo.svg` file in a browser  
-THEN I am shown a 300x200 pixel image that matches the criteria I entered  
+This project is meant to demonstrate the capabilities of the inquirer package and the use of the Class objects in conjunction with object literals.  
+More so, this is an exercise in testing using the Jest package.  Excessive testing was performed to ensure that the output files, work as inteded, including polish for text alignment attributes so that the SVG logos are not only functional, but attractive.  
+
+## Credits
+
+Credit to the teachers and TA staff and UNC for the knowledge provided via the bootcamp.  
+Credit to the W3schools.com site that has been a great reference.  
+
+## License
+
+This was created using the MIT License for educational purposes only.  
+
+
+## Tests  
+1.  Individual triangle test for a blue triangle with white text (JEST).   
+2.  Individual square test for a red square with yellow text (JEST).  
+3.  Individual circle test for a yellow circle with black text (JEST).  
+4.  Individual circle test for a black circle with cornflower blue text using hexadecimal codes (JEST).  
+5.  Multiple iterative tests were performed on the output logo to assess static attribute values for optimal text placement and alignment to shape.  
+
+## Link to Deployed Application
+https://chavisca.github.io/CC-SVG-LOGO-GENERATOR
+
+## Screenshot
+
+![Screenshot_of_the_SVG_Logo_Generated](/assets/images/screenshot.JPG)
+
+Add Video Link here

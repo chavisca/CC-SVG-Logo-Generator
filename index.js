@@ -38,7 +38,7 @@ function writeToFile(fileName, data) {
         if (err) {
             console.error('Error writing to file:', err);
         } else {
-            console.log('Data has been written to' + fileName);
+            console.log('Generated ' + fileName);
         }
     });
 };
