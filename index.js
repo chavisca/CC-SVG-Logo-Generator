@@ -48,10 +48,8 @@ function init () {
     inquirer.prompt(questions)
     .then (response => {
         const fileTBG = renderSVG(response);
-        console.log('*****');
-        console.log(fileTBG);
-        console.log('*****');
         writeToFile(outputFileName, fileTBG);
+        writeToFile('./output/logo.html', fileTBG);
     })
 }
 
