@@ -20,7 +20,7 @@ This was created using the MIT License for educational purposes only.
 2.  Individual square test for a red square with yellow text (JEST).  
 3.  Individual circle test for a yellow circle with black text (JEST).  
 4.  Individual circle test for a black circle with cornflower blue text using hexadecimal codes (JEST).  
-5.  Multiple iterative tests were performed on the output logo to assess static attribute values for optimal text placement and alignment to shape.  
+5.  Multiple iterative tests were performed on the output logo to assess static attribute values for optimal text placement and alignment to shape, in addition to verifying functionality for all selected shapes and browser viewability.  
 
 ## Link to Deployed Application
 https://chavisca.github.io/CC-SVG-LOGO-GENERATOR
