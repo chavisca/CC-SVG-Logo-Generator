@@ -27,6 +27,5 @@ https://chavisca.github.io/CC-SVG-LOGO-GENERATOR
 
 ## Screenshot
 
+Link to video walkthrough: https://vimeo.com/854218205?share=copy  
 ![Screenshot_of_the_SVG_Logo_Generated](/assets/images/screenshot.JPG)
-
-Add Video Link here
